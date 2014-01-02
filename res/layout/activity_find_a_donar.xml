@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/select_blood_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="@string/selectBloodGroup"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Spinner
+        android:id="@+id/select_bloodGroup_dropdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_pincode"
+        android:layout_alignRight="@+id/search_pincode"
+        android:layout_below="@+id/select_blood_group"
+        android:layout_marginTop="21dp"
+        android:entries="@array/Bloodgroup" />
+
+    <EditText
+        android:id="@+id/search_pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_bloodGroup_dropdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:ems="10"
+        android:hint="@string/enterPinCode"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/Search_bloodgroup_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_pincode"
+        android:layout_alignRight="@+id/search_pincode"
+        android:layout_below="@+id/search_pincode"
+        android:layout_marginTop="33dp"
+        android:text="@string/search" />
+
+</RelativeLayout>

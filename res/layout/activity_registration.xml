@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/_phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/_last_name"
+        android:layout_below="@+id/_last_name"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="@string/phoneNumber"
+        android:inputType="phone" 
+        android:maxLength="10"/>
+
+    <EditText
+        android:id="@+id/_email_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/_phone_number"
+        android:layout_below="@+id/_phone_number"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/emailId"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="@string/firstName"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:id="@+id/_bloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="600dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/_first_name"
+        android:layout_marginRight="14dp" >
+
+        <RadioButton
+            android:id="@+id/_onegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oNegative" />
+
+        <RadioButton
+            android:id="@+id/_opositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oPositive" />
+
+        <RadioButton
+            android:id="@+id/_anegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aNegative" />
+
+        <RadioButton
+            android:id="@+id/_apositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aPositive" />
+
+        <RadioButton
+            android:id="@+id/_bnegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bNegative" />
+
+        <RadioButton
+            android:id="@+id/_bpositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bPositive" />
+
+        <RadioButton
+            android:id="@+id/_abnegative"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abNegative" />
+
+        <RadioButton
+            android:id="@+id/_abpositive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/abPositive" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/_pincode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/_email_id"
+        android:layout_below="@+id/_email_id"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/areaPincode"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/_registerDetailsButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/_pincode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/registrationbButton" />
+
+    <EditText
+        android:id="@+id/_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/_first_name"
+        android:layout_below="@+id/_first_name"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/lastName"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="@string/details_DonarName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue" 
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/details_BloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/details_name"
+        android:layout_below="@+id/details_donarfirstandlastname"
+        android:layout_marginTop="29dp"
+        android:text="@string/details_BloodGroup"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/Red"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/details_donarPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_contactInformation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/donar_phonenumber"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/details_donarcontactemailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_donarPhoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/donar_emailId"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/green" />
+
+    <TextView
+        android:id="@+id/donarCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/donarLabel"
+        android:layout_alignBottom="@+id/donarLabel"
+        android:layout_alignRight="@+id/details_BloodGroup"
+        android:text="@string/donarcount" />
+
+    <TextView
+        android:id="@+id/details_donarBloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_BloodGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/donar_bloodgroup"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Red" />
+
+    <TextView
+        android:id="@+id/details_contactInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/details_ContactInformation"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/green"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/details_donarfirstandlastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/details_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="@string/donar_FirstAndLastName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/blue" />
+
+    <ImageButton
+        android:id="@+id/details_leftButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/details_donarcontactemailId"
+        android:layout_marginTop="29dp"
+        android:contentDescription="@string/leftButton"
+        android:src="@drawable/left" />
+
+    <ImageButton
+        android:id="@+id/details_rightButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/details_leftButton"
+        android:contentDescription="@string/rightButton"
+        android:src="@drawable/right" />
+
+    <TextView
+        android:id="@+id/donarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/details_name"
+        android:layout_alignTop="@+id/details_leftButton"
+        android:text="@string/donarLable" />
+
+    <Button
+        android:id="@+id/saveDonarDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donarCount"
+        android:layout_centerHorizontal="true"
+        android:text="@string/saveDetails" />
+
+</RelativeLayout>
